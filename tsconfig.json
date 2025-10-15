@@ -3,6 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components": [ "app/presentation/components/index.ts"],
+      "@use-cases": [ "app/core/use-cases/index.ts"],
+      "@interfaces": [ "app/interfaces/index.ts"],
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
