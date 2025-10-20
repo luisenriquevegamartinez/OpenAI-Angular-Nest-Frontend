@@ -1,6 +1,6 @@
 <div class="chat-container">
 
-    <div class="chat-message">
+    <div class="chat-messages">
 
         <div class="grid gap-y-2">
 
@@ -12,9 +12,13 @@
                 text="Hola, me puedes ayudar a corregir la ortografía de este texto: 'El rapido zorro marron salta sobre el perro perezoso'?"å
             />
              
-        </div>
+            <app-typing-loader />  
 
+        </div>
     </div>
 
-    <app-typing-loader></app-typing-loader>  
+    <app-text-message-box 
+        placeholder="Escribe aquí lo que deseas"
+        (onMessage)="handleMessage($event)"
+    />
 </div>
