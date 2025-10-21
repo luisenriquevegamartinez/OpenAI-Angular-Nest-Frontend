@@ -1,5 +1,14 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { ChatMessageComponent, MyMessageComponent, TextMessageBoxComponent, TextMessageBoxEvent, TextMessageEvent, TypingLoaderComponent } from '@components';
+import { 
+  ChatMessageComponent, 
+  MyMessageComponent, 
+  TextMessageBoxComponent, 
+  TextMessageBoxEvent, 
+  TextMessageBoxFileComponent, 
+  TextMessageBoxSelectComponent, 
+  TextMessageEvent, 
+  TypingLoaderComponent
+} from '@components';
 import { Message } from '@interfaces';
 import { OpenAiService } from 'app/presentation/services/openai.service';
 
@@ -9,7 +18,9 @@ import { OpenAiService } from 'app/presentation/services/openai.service';
     ChatMessageComponent,
     MyMessageComponent,
     TypingLoaderComponent,
-    TextMessageBoxComponent
+    TextMessageBoxComponent,
+    TextMessageBoxFileComponent,
+    TextMessageBoxSelectComponent,
   ],
   templateUrl: './orthographyPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
